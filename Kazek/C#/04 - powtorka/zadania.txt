@@ -1,0 +1,25 @@
+Zadanie 4
+Stwórz klasy bazową Pojazd z właściwością LiczbaKol i metodą Jedz(), a następnie klasę pochodną Samochod, która dziedziczy po Pojazd i ma dodatkową metodę ZapalSwiatla – metoda ta nic nie zwraca (wypisuje „Światła zapalone!”).
+
+Zadanie 5
+Stwórz klasy bazową Pracownik z właściwością Nazwisko oraz metodą PrzedstawSie(). Następnie stwórz klasę pochodną Kierownik, która dziedziczy po Pracownik i dodaje właściwość Dzial.
+
+Zadanie 6
+Stwórz klasę Figura z metodą ObliczPole(), która będzie wirtualna. Następnie stwórz klasę pochodną Kolo, która wprowadza nową właściwość Promien oraz nadpisuje, aby obliczać pole odpowiednio kwadratem koła.
+
+Zadanie 7 
+Stwórz klasę bazową Osoba, która będzie posiadała prywatne pole pesel, chronione pole wiek, oraz publiczne pole imię. Następnie stwórz klasę pochodną Pracownik, która dziedziczy po klasie Osoba, ale dodatkowo posiada pole stanowisko. Klasa Pracownik powinna móc ustawiać wiek (z pola chronionego) oraz wyświetlać dane osoby (z wykorzystaniem odpowiednich pól i metod).
+
+Wymagania:
+Klasa bazowa Osoba:
+	Prywatne pole pesel (numer PESEL osoby).
+	Chronione pole wiek (wiek osoby).
+	Publiczne pole imię (imię osoby).
+	Publiczna metoda PrzedstawSie(), która wypisuje na konsolę imię i wiek (wiek tylko jeśli jest ustawiony, czyli większy niż 0).
+Klasa pochodna Pracownik:
+	Publiczne pole stanowisko (np. "Programista", "Kierownik").
+	Publiczna metoda PrzedstawPracownika(), która wypisuje na konsolę imię, stanowisko i wiek.
+	W metodzie PrzedstawPracownika dostęp do chronionego pola wiek powinien być możliwy.
+
+Zadanie 8
+Napisz klasę produkt ( nazwa, cena) oraz koszyk (lista towarów). Dorób też metodę dodającą towar do koszyka oraz funkcję pokazującą ilość elementów w koszyku i sumę cen. Zasymuluj robienie zakupów.
