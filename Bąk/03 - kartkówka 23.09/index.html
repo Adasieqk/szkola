@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Kontakt</h1>
+
+        <form onsubmit="return false">
+            <table>
+                <tr>
+                    <td>Imię:</td>
+                    <td><input type="text" name="" id="imie" /></td>
+                </tr>
+                <tr>
+                    <td>Nazwisko:</td>
+                    <td><input type="text" name="" id="nazwisko" /></td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="text" name="" id="email" /></td>
+                </tr>
+                <tr>
+                    <td>Zgloszenie:</td>
+                    <td>
+                        <textarea
+                            name=""
+                            id="zgloszenie"
+                            cols="40"
+                            rows="10"
+                        ></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="" id="regulamin" />
+                        Zapoznałem się z regulaminem
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="reset">Resetuj</button>
+                        <button id="submit">Prześlij</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <hr />
+
+        <p id="output"></p>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+* {
+    font-family: Cambria;
+}
+
+body {
+    background: Linen;
+    padding: 0;
+}
+
+.aside,
+.header,
+.footer {
+    background: steelblue;
+    color: white;
+    text-align: center;
+}
+
+.aside {
+    width: 25%;
+    height: 510px;
+    margin: 0 1%;
+    box-shadow: 4px 4px 5px dimgray;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.container {
+    width: 73%;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    height: 400px;
+}
+
+button {
+    background: steelblue;
+    color: white;
+    width: 20%;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 130%;
+    border: none;
+}
+
+button:hover {
+    background: Navy;
+}
+
+.main div {
+    background: lightblue;
+    margin-right: 80px;
+    padding: 10px;
+    display: none;
+}
+
+.main div:first-of-type {
+    display: block;
+}
+
+.progress {
+    background: navy;
+    width: 4%;
+    height: 30px;
+}
+
+table {
+    width: 100%;
+    border: 1px dotted navy;
+}

@@ -1,35 +1,35 @@
 ﻿namespace powtorka
 {
-    // ZADANIE 4
+     //ZADANIE 4
 
-    //class Program
-    //{
-    //    static void Main(string[] args)
-    //    {
-    //        Samochod ford = new Samochod();
-    //        ford.LiczbaKol = 4;
-    //        ford.Jedz();
-    //        ford.ZapalSwiatla();
-    //        Console.WriteLine($"Liczba kol: {ford.LiczbaKol}");
-    //    }
-    //}
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Samochod ford = new Samochod();
+            ford.LiczbaKol = 4;
+            ford.Jedz();
+            ford.ZapalSwiatla();
+            Console.WriteLine($"Liczba kol: {ford.LiczbaKol}");
+        }
+    }
 
-    //class Pojazd
-    //{
-    //    public int LiczbaKol;
-    //    public void Jedz()
-    //    {
-    //        Console.WriteLine("Pojazd jedzie");
-    //    }
-    //}
+    class Pojazd
+    {
+        public int LiczbaKol;
+        public void Jedz()
+        {
+            Console.WriteLine("Pojazd jedzie");
+        }
+    }
 
-    //class Samochod : Pojazd
-    //{
-    //    public void ZapalSwiatla()
-    //    {
-    //        Console.WriteLine("Swiatla zapalone");
-    //    }
-    //}
+    class Samochod : Pojazd
+    {
+        public void ZapalSwiatla()
+        {
+            Console.WriteLine("Swiatla zapalone");
+        }
+    }
 
 
 
@@ -193,68 +193,68 @@
 
     // ZADANIE 8
 
-    class Produkt
-    {
-        public string Nazwa;
-        public decimal Cena;
-    }
+    //class Produkt
+    //{
+    //    public string Nazwa;
+    //    public decimal Cena;
+    //}
 
-    class Koszyk
-    {
-        private Produkt[] produkty = new Produkt[100]; 
-        private int liczbaProduktow = 0;
+    //class Koszyk
+    //{
+    //    private Produkt[] produkty = new Produkt[100]; 
+    //    private int liczbaProduktow = 0;
 
-        public void DodajProdukt(Produkt p)
-        {
-            if (liczbaProduktow < produkty.Length)
-            {
-                produkty[liczbaProduktow] = p;
-                liczbaProduktow++;
-                Console.WriteLine($"Dodano do koszyka: {p.Nazwa}, cena: {p.Cena} zł");
-            }
-            else
-            {
-                Console.WriteLine("Koszyk jest pełny!");
-            }
-        }
+    //    public void DodajProdukt(Produkt p)
+    //    {
+    //        if (liczbaProduktow < produkty.Length)
+    //        {
+    //            produkty[liczbaProduktow] = p;
+    //            liczbaProduktow++;
+    //            Console.WriteLine($"Dodano do koszyka: {p.Nazwa}, cena: {p.Cena} zł");
+    //        }
+    //        else
+    //        {
+    //            Console.WriteLine("Koszyk jest pełny!");
+    //        }
+    //    }
 
-        public void PokazKoszyk()
-        {
-            if (liczbaProduktow == 0)
-            {
-                Console.WriteLine("Koszyk jest pusty.");
-                return;
-            }
+    //    public void PokazKoszyk()
+    //    {
+    //        if (liczbaProduktow == 0)
+    //        {
+    //            Console.WriteLine("Koszyk jest pusty.");
+    //            return;
+    //        }
 
-            decimal suma = 0;
-            Console.WriteLine("\nZawartość koszyka:");
-            for (int i = 0; i < liczbaProduktow; i++)
-            {
-                Console.WriteLine($"- {produkty[i].Nazwa}, cena: {produkty[i].Cena} zł");
-                suma += produkty[i].Cena;
-            }
-            Console.WriteLine($"Suma cen: {suma} zł");
-        }
-    }
+    //        decimal suma = 0;
+    //        Console.WriteLine("\nZawartość koszyka:");
+    //        for (int i = 0; i < liczbaProduktow; i++)
+    //        {
+    //            Console.WriteLine($"- {produkty[i].Nazwa}, cena: {produkty[i].Cena} zł");
+    //            suma += produkty[i].Cena;
+    //        }
+    //        Console.WriteLine($"Suma cen: {suma} zł");
+    //    }
+    //}
 
-    class Program
-    {
-        static void Main()
-        {
-            Produkt chleb = new Produkt() { Nazwa = "Chleb", Cena = 4.50m };
-            Produkt mleko = new Produkt() { Nazwa = "Mleko", Cena = 3.20m };
-            Produkt maslo = new Produkt() { Nazwa = "Masło", Cena = 7.99m };
+    //class Program
+    //{
+    //    static void Main()
+    //    {
+    //        Produkt chleb = new Produkt() { Nazwa = "Chleb", Cena = 4.50m };
+    //        Produkt mleko = new Produkt() { Nazwa = "Mleko", Cena = 3.20m };
+    //        Produkt maslo = new Produkt() { Nazwa = "Masło", Cena = 7.99m };
 
-            Koszyk koszyk = new Koszyk();
+    //        Koszyk koszyk = new Koszyk();
 
-            koszyk.DodajProdukt(chleb);
-            koszyk.DodajProdukt(mleko);
-            koszyk.DodajProdukt(maslo);
+    //        koszyk.DodajProdukt(chleb);
+    //        koszyk.DodajProdukt(mleko);
+    //        koszyk.DodajProdukt(maslo);
 
-            koszyk.PokazKoszyk();
+    //        koszyk.PokazKoszyk();
 
-            Console.ReadLine();
-        }
-    }
+    //        Console.ReadLine();
+    //    }
+    //}
 
 }

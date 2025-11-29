@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sklep - rejestracja</title>
+
+        <link rel="stylesheet" href="styl.css" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="aside">
+                <img src="obraz.png" alt="promocje" />
+                <h2>Sprawdź promocje</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>co?</th>
+                            <th>ile taniej?</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr>
+                            <td>ubrania</td>
+                            <td>15%</td>
+                        </tr>
+                        <tr>
+                            <td>buty</td>
+                            <td>20%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
+
+            <div class="container">
+                <header class="header">
+                    <h1>Zarejestruj się w sklepie</h1>
+                </header>
+
+                <main class="main">
+                    <button onclick="changeSection(0)">Klient</button>
+                    <button onclick="changeSection(1)">Adres</button>
+                    <button onclick="changeSection(2)">Kontakt</button>
+
+                    <div>
+                        <p>Imię</p>
+                        <input
+                            type="text"
+                            class="name"
+                            placeholder="Wpisz dane..."
+                        />
+                        <br />
+                        <p>Nazwisko</p>
+                        <input type="text" class="surname" placeholder="" />
+                        <br />
+                        <p>Imię</p>
+                        <input
+                            type="date"
+                            class="date"
+                            placeholder="Wpisz dane..."
+                        />
+                    </div>
+
+                    <div>
+                        <p>Ulica</p>
+                        <input type="text" class="street" />
+                        <br />
+                        <p>Numer</p>
+                        <input type="number" class="number" />
+                        <br />
+                        <p>Miasto</p>
+                        <input type="text" class="city" />
+                    </div>
+
+                    <div>
+                        <p>Numer komórkowy</p>
+                        <input type="tel" class="phone" />
+                        <br />
+                        <label
+                            ><input type="checkbox" class="rodo" /> Akceptuje
+                            RODO</label
+                        >
+                        <br />
+                        <button class="accept">Zatwierdź dane</button>
+                    </div>
+                </main>
+
+                <section class="progress" style="width: 4%"></section>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <h4>Rejestrację do sklepu wykonał: 01234567890</h4>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
